@@ -38,7 +38,7 @@ const Wrapper = styled.div`
     white-space: nowrap;
     width: 0px;
     z-index: 12;
-    transition: all 0.2s ease 0s;
+    // transition: all 0.2s ease 0s;
     overflow: hidden;
     box-shadow: 0 4px 6px 0 rgb(0 0 0 / 15%);
     box-sizing: border-box;
