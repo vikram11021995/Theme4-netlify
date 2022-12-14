@@ -6392,9 +6392,9 @@ th, td {
     margin-right: auto;
     /* padding: 0 5%; */
   }
-  /* .tab1cards{
+  .tab1cards{
     display: none;
-  } */
+  }
   .card {
     text-align: center;
     margin-bottom: 22px;
