@@ -223,7 +223,7 @@ const Wrapper = styled.div`
   }
   .item {
     border-bottom: 1px solid rgb(221, 221, 221);
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
   }
 
   img {

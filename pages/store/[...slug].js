@@ -19,7 +19,7 @@ import {
 } from "react-icons/md";
 import StoreAboutInfo from "../../components/StoreAboutInfo";
 import Facets from "../../components/Facets/Facets";
-import Drawer from "../../components/elements/Drawer/Drawer";
+import Drawer from "../../components/elements/Drawer/DrawerFacetsStore";
 import SortBy from "../../components/category/SortBy";
 import ProductCount from "../../components/category/ProductCount";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -142,7 +142,7 @@ const Wrapper = styled.div`
 
   .facets-wrapper {
     position: fixed;
-    bottom: 0px;
+    // bottom: 0px;
     z-index: 9999;
     box-shadow: 0 0 10px #cdcdcd;
     left: 0px;
@@ -429,8 +429,49 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
         
 <Container>
         <>
-        <div style={{display: "flex"}}> 
-        <div class="sub-nav-menu-titleee sub-nav-menu-title-business"><h2> {storeTitle} <span>(<ProductCount productCount={numberOfItems} />)</span></h2></div>
+        <div style={{display: "flex", justifyContent: "space-between"}}> 
+        {/* <div class="sub-nav-menu-titleee sub-nav-menu-title-business"><h2> {storeTitle} <span>(<ProductCount productCount={numberOfItems} />)</span></h2></div> */}
+
+        <div>
+            
+              <button
+              className="mobile-filter-button"
+              onClick={() => setMobileFacetsOpen(true)}
+            >
+              Filters
+              <MdFilterList />
+            </button>
+            </div>
+
+            {isMobileState === false && (
+              //       <div className="filterProducts">
+              //         <Fade direction="left" delay={1e3} cascade damping={0.1} triggerOnce style={{position: "sticky",
+              // top: "0"}}>
+              //         <Facets
+              //           query={query}
+              //           setQuery={setQuery}
+              //           facets={facets}
+              //           setQueryIsNotChanged={setQueryIsNotChanged}
+              //           queryIsNotChanged={queryIsNotChanged}
+              //         />
+              //         </Fade>
+              //       </div>
+              <Drawer
+                open={mobileFacetsOpen}
+                onClose={() => setMobileFacetsOpen(false)}
+                class
+              >
+                <Facets
+                      query={query}
+                      setQuery={setQuery}
+                      facets={facets}
+                      setQueryIsNotChanged={setQueryIsNotChanged}
+                      queryIsNotChanged={queryIsNotChanged}
+                    />
+              </Drawer>
+            )}
+
+
         <div>
         <SortBy productCount={numberOfItems} setSortBy={setSortBy} />
         </div>
@@ -438,7 +479,7 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
         
           {storesState && storesState.length > 0 ? (
             <div className="facets-and-category-items-wrapper flex-row block">
-              <div className="facets-wrapper w-full">{renderFacets()}</div>
+              {/* <div className="facets-wrapper w-full">{renderFacets()}</div> */}
 
               <div className="flex flex-col w-full ">
                 <div className="sortby-product-count-wrapper">
@@ -475,8 +516,8 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
               </div>
               <ExternalContentFromCMS place="supplier" position="Bottom" />
 
-              <div className="productsContainer">
-                {!isMobileState && (
+              <div className="productsContainer11">
+                {/* {!isMobileState && (
                   <div className="filterProducts">
                     <Facets
                       query={query}
@@ -486,7 +527,14 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
                       queryIsNotChanged={queryIsNotChanged}
                     />
                   </div>
-                )}
+                )} */}
+
+
+<div class="sub-nav-menu-titleee sub-nav-menu-title-business"><h2> {storeTitle} <span>(<ProductCount productCount={numberOfItems} />)</span></h2></div>
+
+
+
+
                 <div className="productsList" style={{width: "100%"}}>
                   <StoreProducts
                     initialStoreData={initialStoreData}

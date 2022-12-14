@@ -2726,9 +2726,14 @@ span.facetCrumb {
   }
 
   .homebanner-image-wrapper {
-    height: 467px;
+    /* height: 467px;
     background-image: url(https://ik.imagekit.io/ofb/themes/Mask_Group_3_OM67gMq5N.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665052323256);
+    background-position: center; */
+    height: 173px;
+    background-image: url(https://ik.imagekit.io/ofb/themes/Mask_Group_3_OM67gMq5N.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665052323256);
+    object-fit: contain;
     background-position: center;
+    background-size: contain;
   }
 }
 
@@ -4464,38 +4469,17 @@ transform: translateY(-50%);
   
 }
 
-.secureDelivery{
-  width: 70%;
-}
-.fastDeliv{
-  width: 60%;
-    text-align: center;
-    margin-top: 10px;
-}
+
+
 .card{
   text-align: center;
 }
 
-.fastDeliv1{
-  width: 70%;
-  margin-top: 10px;
-}
-.fastDeliv2{
-  width: 70%;
-  margin-top: 10px;
-}
-.fastDeliv3{
-  width: 67%;
-  margin-top: 10px;
-}
-.fastDeliv4{
-  width: 60%;
-  /* margin-top: 10px; */
-}
-.fastDeliv5{
-  width: 75%;
-  margin-top: 10px;
-}
+
+
+
+
+
 .chooseUss{
   text-align: center;
     font-size: 23px;
@@ -5378,6 +5362,32 @@ img {
 
 
 @media all and (max-width: 431px) {
+  .skinCareTip {
+    margin-bottom: 12px !important;
+    text-align: center !important;
+}
+
+  .skinCareDescription{
+    display: none;
+  }
+  .readMorebtn1 {
+    width: 100%;
+}
+
+  .healthTipsdetaildolor {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+  .health-descrip {
+    margin-top: 30px;
+}
+
+  .homebanner-image-wrapper h1 {
+    font-size: 22px;
+    width: 54% !important;
+}
+
   .healthCareTips{
     flex-direction: column;
   }
@@ -5777,9 +5787,7 @@ opacity: 1;
   cursor: pointer;
   color: #37455E;
   font-weight: 500;
-  /* padding: 7px 121px !important; */
-  /* padding: 6px 123px; */
-  padding: 6px 125px;
+  padding: 6px 121px;
 
 }
 
@@ -6328,12 +6336,79 @@ th, td {
 
 
 @media only screen and (min-width: 431px) {
+  .fastDeliv{
+    width: 60%;
+      text-align: center;
+      margin-top: 10px;
+  }
+  .fastDeliv {
+    width: 60%;
+    text-align: center;
+    /* margin-top: 10px; */
+}
+  .fastDeliv2{
+    width: 70%;
+    margin-top: 10px;
+  }
+  .fastDeliv3{
+    width: 67%;
+    margin-top: 10px;
+  }
+  
+  .fastDeliv4{
+    width: 60%;
+    /* margin-top: 10px; */
+  }
+  .fastDeliv5 {
+    width: 75%;
+    margin-top: 10px;
+}
+  .fastDeliv1{
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  .secureDelivery{
+    width: 70%;
+  }
+
   .item-imagescheckout{
     flex-direction: column-reverse;
+  }
+
+  .ReasontoChoosemobile{
+    display: none;
   }
 }
 
 @media only screen and (max-width: 430px) {
+  
+
+
+  .fastDelivMain{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 5%; */
+  }
+  /* .tab1cards{
+    display: none;
+  } */
+  .card {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+  .tab1cards {
+    flex-direction: column !important;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
   .beauty-product-detail{
     display: none;
   }
@@ -6345,9 +6420,9 @@ th, td {
     top: 8% !important;
   }
   .top-left {
-    width: 100% !important;
-    top: 31%;
-  }
+    width: 60% !important;
+    top: 28%;
+}
   .extremetop-left{
     display: none;
   }
@@ -6394,5 +6469,9 @@ th, td {
 button {
   font-family: 'Noto Sans', sans-serif !important;
 }
+
+/* .button-addtocart1{
+  padding: 6px 123px !important;
+} */
 
 

@@ -98,6 +98,7 @@
   opacity: 1;
 }
 
+@media all and (min-width: 432px) {
 .ShopByCollectionHeading:after{
   display: inline-block !important;
     content: "" !important;
@@ -105,4 +106,13 @@
     width: 80% !important;
     margin: -12px 0rem -12px 1rem;
     transform: translateY(-1rem);
+}
+}
+
+@media all and (max-width: 431px) {
+  .ShopByCollectionHeading:after{
+    width: 55% !important;
+    transform: translateY(0rem) !important;
+    margin-left: 3px;
+  }
 }

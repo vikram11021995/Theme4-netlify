@@ -443,7 +443,7 @@ const ItemCard = ({
           {/* <button className="button-addtocart category-btn">Add to Cart</button> */}
           {/* <Link href={`/${item.url}`} prefetch={false} ><span>Add to Shopping Bag</span></Link> */}
           <Link href={`/${item.url}`} prefetch={false} >
-          <button className="button-addtocart category-btn">Add to Cart</button>
+          <button className="button-addtocart button-addtocart1 category-btn">Add to Cart</button>
           </Link>
 
         </div>

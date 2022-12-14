@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import classes from "./CategoriesListTheme1.module.css";
-import {Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
-const HomeBanner = (props) => {
+const HomeBanner = props => {
   return (
     <>
       <Head>
@@ -151,43 +151,178 @@ const HomeBanner = (props) => {
         </div>
       </div> */}
 
-
-
-
-<h3 className="chooseUss">Why Choose Us</h3>
+      <h3 className="chooseUss">Why Choose Us</h3>
       <div className="tab1cards">
-                <div className="card">
-                    <img src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653" alt="safari"  className="secureDelivery"/>
-                    <h4 className="fastDeliv">Fast & Secure Delivery</h4>
-                </div>
-                <div className="card">
-                <img src="https://ik.imagekit.io/ofb/themes/Group_401_eOPs0wIII.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124553" alt="safari"  className="secureDelivery"/>
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv">Fast & Secure Delivery</h4>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_401_eOPs0wIII.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124553"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv1">
+              Organic
+              <br />
+              Products
+            </h4>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_402_jGk1qWDUR1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
+            alt="safari"
+            className="secureDelivery"
+          />
 
-                    <h4 className="fastDeliv1">Organic<br/>Products</h4>
-                </div>
-                <div className="card">
-                <img src="https://ik.imagekit.io/ofb/themes/Group_402_jGk1qWDUR1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653" alt="safari"  className="secureDelivery"/>
+          <div>
+            <h4 className="fastDeliv2">
+              Free <br />
+              Shipping
+            </h4>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_403_CnHA2nC-Ru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124671"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv3">Vegan Friendly Formula</h4>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_404_eTc4aYaVo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124593"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv4">Dermatologically Approved</h4>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_405_EZfz8SK8nl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124567"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv5">
+              Cruelty <br />
+              Free
+            </h4>
+          </div>
+        </div>
+      </div>
 
-                    <h4 className="fastDeliv2">Free <br/>Shipping</h4>
-                </div>
-                <div className="card">
-                <img src="https://ik.imagekit.io/ofb/themes/Group_403_CnHA2nC-Ru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124671" alt="safari" className="secureDelivery"/>
-
-                    <h4 className="fastDeliv3">Vegan Friendly Formula</h4>
-                </div>
-                <div className="card">
-                <img src="https://ik.imagekit.io/ofb/themes/Group_404_eTc4aYaVo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124593" alt="safari"  className="secureDelivery"/>
-
-                    <h4 className="fastDeliv4">Dermatologically Approved</h4>
-                </div>
-                <div className="card">
-                <img src="https://ik.imagekit.io/ofb/themes/Group_405_EZfz8SK8nl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124567" alt="safari"  className="secureDelivery"/>
-
-                    <h4 className="fastDeliv5">Cruelty <br/>Free</h4>
-                </div>
-            </div>
 
 
+
+
+      <div className="ReasontoChoosemobile">
+<div className="fastDelivMain">
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv">Fast & Secure <br/> Delivery</h4>
+          </div>
+        </div>
+
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_401_eOPs0wIII.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124553"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv1">
+              Organic
+              <br />
+              Products
+            </h4>
+          </div>
+        </div>
+        </div>
+
+
+        <div className="fastDelivMain">
+
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_402_jGk1qWDUR1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
+            alt="safari"
+            className="secureDelivery"
+          />
+
+          <div>
+            <h4 className="fastDeliv2">
+              Free <br />
+              Shipping
+            </h4>
+          </div>
+        </div>
+
+        {/* <div className="fastDelivMain"> */}
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_403_CnHA2nC-Ru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124671"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv3">Vegan Friendly<br/> Formula</h4>
+          </div>
+        </div>
+
+        </div>
+
+
+        <div>
+
+        <div className="fastDelivMain">
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_404_eTc4aYaVo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124593"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv4">Dermatologically Approved</h4>
+          </div>
+        </div>
+
+        <div className="card">
+          <img
+            src="https://ik.imagekit.io/ofb/themes/Group_405_EZfz8SK8nl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124567"
+            alt="safari"
+            className="secureDelivery"
+          />
+          <div>
+            <h4 className="fastDeliv5">
+              Cruelty <br />
+              Free
+            </h4>
+          </div>
+        </div>
+        </div>
+        </div>
+
+      </div>
     </>
   );
 };
