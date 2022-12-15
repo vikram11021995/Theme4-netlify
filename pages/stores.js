@@ -256,12 +256,16 @@ const Stores = ({ storesProps }) => {
               )}
             </div>
           </div> */}
+
+          
           <Container>
           <div className="flex">
-           {!isMobileState ? <div className="flex w-3/12 flex-col pr-4">
+           {/* {!isMobileState ? 
+           <div className="flex w-3/12 flex-col pr-4">
               <img src="https://ik.imagekit.io/ofb/themes/facetss_jM6Cgk7i3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666332126216" />
       
-    </div> : null}
+    </div> : 
+    null} */}
             <div>
               {typeof window !== undefined &&
               typeof XMLHttpRequest !== undefined ? (

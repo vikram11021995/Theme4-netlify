@@ -4862,7 +4862,6 @@ transform: translateY(-50%);
 .imagesitemcollection11 {
   position: relative;
   width: 100%;
-  max-width: 32.2%;
 }
 
 .imagesitemcollection11 img {
@@ -5787,8 +5786,7 @@ opacity: 1;
   cursor: pointer;
   color: #37455E;
   font-weight: 500;
-  padding: 6px 121px;
-
+  padding: 7px 125px;
 }
 
 .item:hover{
@@ -6336,6 +6334,10 @@ th, td {
 
 
 @media only screen and (min-width: 431px) {
+  .imagesitemcollection11 {
+    max-width: 32.2%;
+  }
+
   .fastDeliv{
     width: 60%;
       text-align: center;
@@ -6382,8 +6384,45 @@ th, td {
 }
 
 @media only screen and (max-width: 430px) {
-  
+  .liHeadFooter{
+    display: none;
+  }
+  .basket-icon-btn {
+    padding: 2px 2px !important;
+}
 
+  .footer--desktop{
+    display: none;
+  }
+  .container-e {
+    margin-top: 20px !important;
+}
+
+  .container-c {
+    margin-top: 20px !important;
+}
+  .container-a {
+    margin-top: 20px !important;
+}
+  .shopCollections{
+    width: 100%;
+  }
+
+  .container-g {
+    position: relative;
+    width: 370px;
+    /* height: 200px; */
+}
+
+/* .shopCollectionsImage {
+    width: 100%;
+    height: 100%
+} */
+
+  .shopByCollections {
+    display: flex;
+    flex-direction: column;
+}
 
   .fastDelivMain{
     display: flex;
@@ -6444,14 +6483,6 @@ th, td {
     width: 62% !important;
 }
 
-.addwishlistwrapper {
-  padding: 10px 128px !important;
-}
-
-.removewishlistwrapper {
-  padding: 10px 106px !important;
-}
-
 .qtyControlsBox {
   margin-bottom: 27px !important;
 }
@@ -6473,5 +6504,36 @@ button {
 /* .button-addtocart1{
   padding: 6px 123px !important;
 } */
+.home-detail{
+  padding: 10px 0px;
+  /* line-height: 84px; */
+  height: 84px;
+}
+
+.collection-colo:hover{
+  color:#fff;
+}
+
+.categoryReadBtn:hover{
+  color: #fff;
+}
+
+
+.button-cartsearch {
+  background-color: #F27665;
+  border: none;
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 15px; */
+  font-size: 14px;
+  cursor: pointer;
+  color: #37455E;
+  font-weight: 500;
+  padding: 7px 128px;
+}
+
+
 
 

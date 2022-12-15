@@ -52,7 +52,11 @@ const HomeBanner = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button className="readMorebtn readMorebtn1">Read More</button>
+          <button className="readMorebtn readMorebtn1">
+          <Link href={`/shop/categories`}>
+                <a className="categoryReadBtn">Read More</a>
+              </Link>
+          </button>
         </div>
       </div>
     </div>

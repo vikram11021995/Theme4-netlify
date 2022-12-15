@@ -63,7 +63,12 @@ const HomeBanner = () => {
 
             <div className="extremetop-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 
-            <div className="extremetop-left-btn"><button className="shopCollectBtn">Shop Collection</button></div>
+            <div className="extremetop-left-btn">
+              <button className="shopCollectBtn">
+              <Link href={`/shop/categories/skin-care`}>
+                      <a className="collection-colo">Shop Collection</a>
+                    </Link>
+              </button></div>
         </div>
       </div>
     </>

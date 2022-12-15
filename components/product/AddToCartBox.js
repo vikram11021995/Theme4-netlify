@@ -409,30 +409,18 @@ const AddToCartBox = ({
                       )}{" "}
                       <span style={{ fontSize: "15px" }}></span>
                     </p>
-                    {/* <p
-                      style={{
-                        fontSize: "14px",
-                        borderBottom: "1px solid #e7e4e4",
-                        paddingBottom: "10px"
-                      }}
-                    >
-                      Seller Name : {firstDistId}
-                    </p> */}
-                    <p className="variants-itemMobile">
+                    
+                    {/* <p className="variants-itemMobile">
                       <div className="variants-item">
                         <div style={{ color: "#37455E",paddingRight: "11%" }}>Weight<span style={{padding: "0 78%"}}>:</span></div>
                         <div className="item-wt">
-                          {/* <ul className="colors">
-                            <li>50 <span>gm</span></li>
-                            <li>100 gm</li>
-                            <li>200 gm</li>
-                          </ul> */}
+                      
                           <div className="rectangle">100 gm</div>
                           <div className="rectangle2">100 gm</div>
                           <div className="rectangle3">100 gm</div>
                         </div>
                       </div>
-                    </p>
+                    </p> */}
                     <p className="variants-itemMobile">
                       <div className="variants-item">
                         <div style={{ color: "#37455E", paddingRight: "7%", marginTop: "auto" }}>Ingredient<span style={{padding: "0 26%"}}>:</span></div>

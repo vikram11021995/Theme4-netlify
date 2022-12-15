@@ -152,7 +152,7 @@ const HomeBanner = props => {
       </div> */}
 
       <h3 className="chooseUss">Why Choose Us</h3>
-      <div className="tab1cards">
+      {/* <div className="tab1cards">
         <div className="card">
           <img
             src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
@@ -224,105 +224,47 @@ const HomeBanner = props => {
             </h4>
           </div>
         </div>
+      </div> */}
+
+
+      <div className="overflow-x-auto flex justify-center">
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Fast & Secure<br/>Delivery</strong>
+        </div>
       </div>
-
-
-
-
-
-      <div className="ReasontoChoosemobile">
-<div className="fastDelivMain">
-        <div className="card">
-          <img
-            src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
-            alt="safari"
-            className="secureDelivery"
-          />
-          <div>
-            <h4 className="fastDeliv">Fast & Secure <br/> Delivery</h4>
-          </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_401_eOPs0wIII.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124553"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Organic<br/>Products</strong>
         </div>
-
-        <div className="card">
-          <img
-            src="https://ik.imagekit.io/ofb/themes/Group_401_eOPs0wIII.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124553"
-            alt="safari"
-            className="secureDelivery"
-          />
-          <div>
-            <h4 className="fastDeliv1">
-              Organic
-              <br />
-              Products
-            </h4>
-          </div>
-        </div>
-        </div>
-
-
-        <div className="fastDelivMain">
-
-        <div className="card">
-          <img
-            src="https://ik.imagekit.io/ofb/themes/Group_402_jGk1qWDUR1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"
-            alt="safari"
-            className="secureDelivery"
-          />
-
-          <div>
-            <h4 className="fastDeliv2">
-              Free <br />
-              Shipping
-            </h4>
-          </div>
-        </div>
-
-        {/* <div className="fastDelivMain"> */}
-        <div className="card">
-          <img
-            src="https://ik.imagekit.io/ofb/themes/Group_403_CnHA2nC-Ru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124671"
-            alt="safari"
-            className="secureDelivery"
-          />
-          <div>
-            <h4 className="fastDeliv3">Vegan Friendly<br/> Formula</h4>
-          </div>
-        </div>
-
-        </div>
-
-
-        <div>
-
-        <div className="fastDelivMain">
-        <div className="card">
-          <img
-            src="https://ik.imagekit.io/ofb/themes/Group_404_eTc4aYaVo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124593"
-            alt="safari"
-            className="secureDelivery"
-          />
-          <div>
-            <h4 className="fastDeliv4">Dermatologically Approved</h4>
-          </div>
-        </div>
-
-        <div className="card">
-          <img
-            src="https://ik.imagekit.io/ofb/themes/Group_405_EZfz8SK8nl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124567"
-            alt="safari"
-            className="secureDelivery"
-          />
-          <div>
-            <h4 className="fastDeliv5">
-              Cruelty <br />
-              Free
-            </h4>
-          </div>
-        </div>
-        </div>
-        </div>
-
       </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_402_jGk1qWDUR1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Free<br/>Shipping</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_403_CnHA2nC-Ru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124671"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Vegan Friendly<br/>Formula</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_404_eTc4aYaVo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124593"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Dermatologically<br/>Approved</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_405_EZfz8SK8nl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124567"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Cruelty<br/>Free</strong>
+        </div>
+      </div>
+    </div>
     </>
   );
 };

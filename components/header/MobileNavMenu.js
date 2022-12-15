@@ -143,18 +143,21 @@ const MobileNavMenu = ({ open, toggle, close, menu: { childs } }) => {
                 );
               })}
             
-            <li onClick={toggle}><div className="navmenumain"><Link href={`/contact-us`}><a>Contact Us </a></Link></div></li>
-            <li onClick={toggle}><div className="navmenumain"><Link href={`/contact-us`}><a>About Us </a></Link></div></li>
-            <li onClick={toggle}><div className="navmenumain"><Link href={`/contact-us`}><a>Terms Of Use</a></Link></div></li>
-            <li onClick={toggle}><div className="navmenumain"><Link href={`/contact-us`}><a>Shipping Information</a></Link></div></li>
+            <li onClick={toggle}><div className="navmenumain"><Link href={`https://www.avetticommerce.com/`}><a>Contact Us </a></Link></div></li>
+            {/* <li onClick={toggle}><div className="navmenumain"><Link href={`/contact-us`}><a>About Us </a></Link></div></li> */}
+            <li onClick={toggle}><div className="navmenumain"><Link href={`terms-of-use`}><a>Terms Of Use</a></Link></div></li>
+            <li onClick={toggle}><div className="navmenumain"><Link href={`/shipping-information`}><a>Shipping Information</a></Link></div></li>
+            <li onClick={toggle}><div className="navmenumain"><Link href={`/return-policy`}><a>Return Policy</a></Link></div></li>
+            <li onClick={toggle}><div className="navmenumain"><Link href={`/privacy-policy`}><a>Privacy Policy</a></Link></div></li>
+
             
             {/* {!loginNameState ? <li><div className="navmenumain"><a href={`${LINK_DISTRIBUTION}/signin.html?vid=20220426878&mt=1`}
                     target="_blank" rel="noreferrer">Login <MdKeyboardArrowRight /></a></div></li> : <><li><div className="navmenumain"><a onClick={dropdownMobile1}> {loggedInState} <MdKeyboardArrowRight /></a></div></li>
             {isOpened1 && (
               <div className="MobileDropdown">
               <ul onClick={toggle} className="mobileLogout">
-               <AuthLogOut setIsOpened={setIsOpened}  />              
-              </ul>
+               <AuthLogOut setIsOpened={setIsOpened}  />              /return-policy
+              </ul>/privacy-policy
             </div>
             )}
             </>

@@ -8,12 +8,12 @@ import ProductCount from "../components/category/ProductCount";
 import SkeletonCategoryItems from "../components/category/SkeletonCategoryItems";
 import { LINK_DISTRIBUTION, SHOW_PER_PAGE } from "../project-config";
 import { shallowEqual, useSelector } from "react-redux";
-import ItemCard from "../components/shared-components/ItemCard";
+import ItemCard from "../components/shared-components/ItemCardSearch";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { i18n } from "../next-i18next.config";
 import Facets from "../components/Facets/Facets";
-import Drawer from "../components/elements/Drawer/Drawer";
+import Drawer from "../components/elements/Drawer/DrawerSearch";
 import { MdOutlineClose, MdFilterList } from "react-icons/md";
 
 const Search = () => {

@@ -8,6 +8,14 @@ export const Tabs = styled.div`
     justify-content: space-between;
     margin-bottom: 54px;
     border-bottom: 1px solid #F27665;
+
+
+@media only screen and (max-width: 430px) {
+  // padding: 4px 2px;
+  overflow-x: auto;
+}
+
+    
 `;
 
 export const Tab = styled.button`
@@ -33,15 +41,24 @@ border: 1px solid #707070;
     background-color: #FFFFFF;
     color: #363636;
     // /* font-family: Roboto; */
-    width: 15%;
+    // width: 15%;
     padding: 4px 0px;
     margin-bottom: 3px;
 
   :hover {
     background-color: white;
     border: 1px solid #F27665;
-    border-bottom: 4px solid #F27665;
+    border-bottom: 1px solid #F27665 !important;
+    // border-bottom: 4px solid #F27665;
   }
+
+@media only screen and (min-width: 431px) {
+  width: 15%;
+}
+@media only screen and (max-width: 430px) {
+  padding: 4px 2px !important;
+}
+
 `;
 export const Content = styled.div`
   ${props => (props.active ? "" : "display:none")}

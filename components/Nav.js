@@ -23,6 +23,11 @@ const Wrapper = styled.div`
   .menu-list li.megamenu {
     position: static;
     padding: 0 0px;
+
+    list-style-type: none;
+    margin-right: 50px;
+    // line-height: 84px;
+    height: 84px;
   }
   
   /*----------------- DropDown ---------------*/
@@ -248,7 +253,7 @@ const Nav = ({ menu: { childs } }) => {
                       href={`/${url}`}
                       onClick={() => handleCategoryChange()}
                     >
-                      <a className="hi">{child.description.replace("Home1", "Home")}</a>
+                      <a className="home-detail">{child.description.replace("Home1", "Home")}</a>
                     </Link>
                     
                     {child.childs.length > 0 ? (

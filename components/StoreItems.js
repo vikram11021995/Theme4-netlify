@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, shallowEqual, useDispatch } from "react-redux";
-import StoreCard from "./StoreCard";
+import StoreCard from "./StoreFrontCard";
 import styled from "styled-components";
 import { categoryUrl } from "../preScripts/links";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -11,9 +11,11 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const Wrapper = styled.div`
   .catItems {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     overflow: hidden !important;
+    // border-bottom: 1px solid re;
+    padding: 0 5%;
   }
 
   @media screen and (max-width: 1024px) {

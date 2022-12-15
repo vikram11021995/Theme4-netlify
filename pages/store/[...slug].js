@@ -73,7 +73,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
   .sub-nav-wrapper {
-    background: url("https://ik.imagekit.io/ofb/themes/Mask_Group_5_qByvx6kru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665383991372") !important;
+    background-image: url("https://ik.imagekit.io/ofb/themes/Group_566_EiinFUMb3Z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1670567308442") !important;
     /* background-size: cover !important; */
     background-position-x: center !important;
     background-position-y: top !important;
@@ -235,11 +235,20 @@ const Wrapper = styled.div`
       }
     }
   }
-  //@media only screen and (max-width: 900px) {
-  //  .mobileInfo {
-  //    margin-top: -80px;
-  //  }
-  //}
+  @media only screen and (max-width: 430px) {
+   .static-filterstorefront {
+     display: none;
+   }
+
+    .facets-wrapper {
+      left: 0px;
+      bottom: 0;
+  }
+
+  .storefrontfilter-mobile{
+    justify-content: flex-end !important;
+  }
+  }
 `;
 
 const Store = ({ storesState, URLCapitalize, storeTitle }) => {
@@ -371,7 +380,7 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
               facets={facets}
               setQueryIsNotChanged={setQueryIsNotChanged}
               queryIsNotChanged={queryIsNotChanged}
-              renderTitleAndCloseButton={true}
+              // renderTitleAndCloseButton={true}
             />
           </Drawer>
         )}
@@ -429,10 +438,10 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
         
 <Container>
         <>
-        <div style={{display: "flex", justifyContent: "space-between"}}> 
+        <div style={{display: "flex", justifyContent: "space-between"}} className="storefrontfilter-mobile"> 
         {/* <div class="sub-nav-menu-titleee sub-nav-menu-title-business"><h2> {storeTitle} <span>(<ProductCount productCount={numberOfItems} />)</span></h2></div> */}
 
-        <div>
+        <div className="static-filterstorefront">
             
               <button
               className="mobile-filter-button"
@@ -469,7 +478,8 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
                       queryIsNotChanged={queryIsNotChanged}
                     />
               </Drawer>
-            )}
+            )
+            }
 
 
         <div>
@@ -479,7 +489,7 @@ const Store = ({ storesState, URLCapitalize, storeTitle }) => {
         
           {storesState && storesState.length > 0 ? (
             <div className="facets-and-category-items-wrapper flex-row block">
-              {/* <div className="facets-wrapper w-full">{renderFacets()}</div> */}
+              <div className="facets-wrapper w-full">{renderFacets()}</div>
 
               <div className="flex flex-col w-full ">
                 <div className="sortby-product-count-wrapper">

@@ -199,6 +199,13 @@ const Wrapper = styled.div`
       flex-basis: 100%;
     }
   }
+
+  @media only screen and (max-width: 430px) {
+
+  .mobile-filters{
+    display: none;
+  }
+}
 `;
 
 export const setFacetsAPI = (setFacets, facets) => {
@@ -679,7 +686,7 @@ const Category = ({
             <div>
             
               <button
-              className="mobile-filter-button"
+              className="mobile-filter-button mobile-filters"
               onClick={() => setMobileFacetsOpen(true)}
             >
               Filters
@@ -698,18 +705,6 @@ const Category = ({
           {/* <div class></div> */}
           <div className="productsContainer">
             {isMobileState === false && (
-              //       <div className="filterProducts">
-              //         <Fade direction="left" delay={1e3} cascade damping={0.1} triggerOnce style={{position: "sticky",
-              // top: "0"}}>
-              //         <Facets
-              //           query={query}
-              //           setQuery={setQuery}
-              //           facets={facets}
-              //           setQueryIsNotChanged={setQueryIsNotChanged}
-              //           queryIsNotChanged={queryIsNotChanged}
-              //         />
-              //         </Fade>
-              //       </div>
               <Drawer
                 open={mobileFacetsOpen}
                 onClose={() => setMobileFacetsOpen(false)}

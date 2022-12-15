@@ -5,21 +5,90 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Fade } from "react-awesome-reveal";
-import PopularOffersoftheDayCard from "../components/PopularOffersoftheDayCard";
+import PopularOffersoftheDayCard from "../components/PopularOffersoftheDayCardHome";
 // import PopularOffersoftheDayCard from "../"
 import Grid from "./AC-UI-Elements/Grid/Grid";
 
 import { toggleWishListAction } from "../redux/actions/wishlistActions";
 import { Tabs, Tab, Content } from "../components/categoryTab"
+import styled from "styled-components";
+
+
+const ChangeIconColorOnce = styled.div`
+  // height: 10rem;
+  border: 1px solid black;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 function PopularOffersoftheDay({ shopby }) {
   const [active, setActive] = useState(0);
+  // const [buttonStatus, setButtonStatus] = useState('');
+  // const [buttonStatus, setButtonStatus] = useState("login");
+  const [iconOneColor, setIconOneColor] = useState("1px solid #1A2841");
+  const [iconTwoColor, setIconTwoColor] = useState("1px solid #1A2841");
+  const [iconThreeColor, setIconThreeColor] = useState("1px solid #1A2841");
+  const [iconFourColor, setIconFourColor] = useState("1px solid #1A2841");
+  const [iconFiveColor, setIconFiveColor] = useState("1px solid #1A2841");
+
+
   const handleClick = e => {
+    setIconOneColor("4px solid #F27665");
+    // setIconOneColor("1px solid #F27665");
+    // setIconTwoColor("3px solid #F27665");
+    // setIconThreeColor("3px solid #F27665");
+    // setIconFourColor("3px solid #F27665");
+    // setIconFiveColor("3px solid #F27665");
+
     const index = parseInt(e.target.id, 0);
     if (index !== active) {
       setActive(index);
     }
+
   };
+
+  const handleClick1 = e => {
+    setIconTwoColor("4px solid #F27665");
+    
+    const index = parseInt(e.target.id, 0);
+    if (index !== active) {
+      setActive(index);
+    }
+
+  };
+
+  const handleClick2 = e => {
+    setIconThreeColor("4px solid #F27665");
+    const index = parseInt(e.target.id, 0);
+    if (index !== active) {
+      setActive(index);
+    }
+
+  };
+
+  const handleClick3 = e => {
+    setIconFourColor("4px solid #F27665");
+
+    const index = parseInt(e.target.id, 0);
+    if (index !== active) {
+      setActive(index);
+    }
+
+  };
+
+  const handleClick4 = e => {
+    setIconFiveColor("4px solid #F27665");
+
+    const index = parseInt(e.target.id, 0);
+    if (index !== active) {
+      setActive(index);
+    }
+
+  };
+
+  
 
 
   console.log("shopbyshopby", shopby);
@@ -67,6 +136,19 @@ function PopularOffersoftheDay({ shopby }) {
     state => state.wishListReducer.wishlist,
     shallowEqual
   );
+
+
+  // const handleClick = () =>{
+
+  //   if(buttonStatus === ''){
+  //     setButtonStatus('active')
+  //   }
+    
+  //   else{
+  //     setButtonStatus('')
+  //   }
+    
+  //   }
 
   const toggleWish = (e, id, title, desc, currency_sign, image, price, url) => {
     e.preventDefault();
@@ -144,78 +226,84 @@ function PopularOffersoftheDay({ shopby }) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
             </p>
 
-            {/* <div className="content-wrapperm content-skincare"> */}
 
-
-              {/* <ul className="skincare-makeup nav nav-tabs" role="tablist">
-                <li className="beauty-products nav-item">
-                  <a
-                    target="_blank"
-                    className="tab nav-link active"
-                    data-toggle="tab"
-                    href="#menu1"
-                  >
-                    Skincare
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a
-                    target="_blank"
-                    className="tab"
-                    data-toggle="tab"
-                    href="#menu2"
-                  >
-                    Makeup
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a
-                    data-toggle="tab"
-                    href="#menu3"
-                    target="_blank"
-                    className="tab"
-                  >
-                    Hair Care
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a
-                    data-toggle="tab"
-                    href="#menu4"
-                    target="_blank"
-                    className="tab"
-                  >
-                    Bath & Body
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a
-                    data-toggle="tab"
-                    href="#menu5"
-                    target="_blank"
-                    className="tab"
-                  >
-                    Fragrance
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a data-toggle="tab" href="#menu6" target="_blank">
-                    Lorem Ipsum
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a data-toggle="tab" href="#menu7" target="_blank">
-                    Lorem Ipsum
-                  </a>
-                </li>
-                <li className="beauty-products nav-item">
-                  <a data-toggle="tab" href="#menu8" target="_blank">
-                    Lorem Ipsum
-                  </a>
-                </li>
-              </ul> */}
+              
 
 <Tabs>
+        <Tab onClick={handleClick} active={active === 0} id={0} style={{ borderBottom: iconOneColor }}>
+        Skincare
+        </Tab>
+
+        <Tab onClick={handleClick1} active={active === 1} id={1} style={{ borderBottom: iconTwoColor }}>
+        Makeup
+        </Tab>
+        <Tab onClick={handleClick2} active={active === 2} id={2} style={{ borderBottom: iconThreeColor }}>
+        Hair Care
+        </Tab>
+        <Tab onClick={handleClick3} active={active === 3} id={3} style={{ borderBottom: iconFourColor }}>
+        Bath & Body
+        </Tab>
+        <Tab onClick={handleClick4} active={active === 4} id={4} style={{ borderBottom: iconFiveColor }}>
+        Fragrance
+        </Tab>
+      </Tabs>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="overflow-x-auto flex justify-center">
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_400_pd9Q9BM1P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Fast & Secure<br/>Delivery</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_401_eOPs0wIII.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124553"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Organic<br/>Products</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_402_jGk1qWDUR1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124653"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Free<br/>Shipping</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_403_CnHA2nC-Ru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124671"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Vegan Friendly<br/>Formula</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_404_eTc4aYaVo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124593"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Dermatologically<br/>Approved</strong>
+        </div>
+      </div>
+      <div className="flex-none py-6 px-3 first:pl-6 last:pr-6">
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img className="w-18 h-18 rounded-full" src="https://ik.imagekit.io/ofb/themes/Group_405_EZfz8SK8nl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669697124567"/>
+          <strong className="text-slate-900 text-sm font-medium dark:text-slate-200 text-center">Cruelty<br/>Free</strong>
+        </div>
+      </div>
+
+
+      <Tabs>
         <Tab onClick={handleClick} active={active === 0} id={0}>
         Skincare
         </Tab>
@@ -233,6 +321,18 @@ function PopularOffersoftheDay({ shopby }) {
         Fragrance
         </Tab>
       </Tabs>
+    </div> */}
+
+
+
+
+
+
+
+
+
+
+
       <>
       <Content active={active === 0}>
         {console.log("shopby", shopby)}
@@ -254,9 +354,6 @@ function PopularOffersoftheDay({ shopby }) {
               dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px"
             >
-              {/* {console.log("fff", shopby?.[1]?.items?.[1]?.Object.keys(properties).Skin_type)} */}
-              {/* {console.log("vvvvvv", shopby?.[1]?.items?.title)} */}
-
 {/* {console.log("xxxxrrrayyy", shopby?.[1]?.items?.title)} */}
               {shopby &&
                 shopby?.[1]?.items?.map(item => (
@@ -266,15 +363,6 @@ function PopularOffersoftheDay({ shopby }) {
                     <PopularOffersoftheDayCard key={item.id} itemCard={item} />
                   </div>
                 ))}
-
-                {/* {shopby &&
-                shopby?.[1]?.items?.filter((cval) => cval.title = 'Face Serum').map(item => (
-                  
-                  <div key={item.id} className="owl-item popularProducts">
-                    
-                    <PopularOffersoftheDayCard key={item.id} itemCard={item} />
-                  </div>
-                ))} */}
             </Carousel>
           ) : (
             renderPlaceholderCards()
@@ -303,7 +391,7 @@ function PopularOffersoftheDay({ shopby }) {
               {/* {shopby &&
                 shopby?.[1]?.items?.map(item => ( */}
                 {shopby &&
-                shopby?.[1]?.items?.filter((cvall) => cvall.title = 'Hydration Cream').map(item => (
+                shopby?.[1]?.items?.map(item => (
                   <div key={item.id} className="owl-item popularProducts">
                     <PopularOffersoftheDayCard key={item.id} itemCard={item} />
                   </div>
@@ -336,7 +424,7 @@ function PopularOffersoftheDay({ shopby }) {
               {/* {shopby &&
                 shopby?.[1]?.items?.map(item => ( */}
                 {shopby &&
-                shopby?.[1]?.items?.filter((cvals) => cvals.title = 'Cucumber Shampoo').map(item => (
+                shopby?.[1]?.items?.map(item => (
                   <div key={item.id} className="owl-item popularProducts">
                     <PopularOffersoftheDayCard key={item.id} itemCard={item} />
                   </div>
@@ -369,7 +457,7 @@ function PopularOffersoftheDay({ shopby }) {
               {/* {shopby &&
                 shopby?.[1]?.items?.map(item => ( */}
                 {shopby &&
-                shopby?.[1]?.items?.filter((cvalt) => cvalt.title = 'BB Cream').map(item => (
+                shopby?.[1]?.items?.map(item => (
                   <div key={item.id} className="owl-item popularProducts">
                     <PopularOffersoftheDayCard key={item.id} itemCard={item} />
                   </div>
@@ -402,7 +490,7 @@ function PopularOffersoftheDay({ shopby }) {
               {/* {shopby &&
                 shopby?.[1]?.items?.map(item => ( */}
                 {shopby &&
-                shopby?.[1]?.items?.filter((cvalf) => cvalf.title = 'Fresh Aroma Spray').map(item => (
+                shopby?.[1]?.items?.map(item => (
                   <div key={item.id} className="owl-item popularProducts">
                     <PopularOffersoftheDayCard key={item.id} itemCard={item} />
                   </div>
@@ -415,9 +503,6 @@ function PopularOffersoftheDay({ shopby }) {
         
       </>
 
-            {/* </div> */}
-
-            {/* <button><Link href={`/shop/shop-by/`}><a>View More <MdKeyboardArrowRight /></a></Link></button> */}
           </div>
 
 
@@ -451,24 +536,6 @@ function PopularOffersoftheDay({ shopby }) {
             renderPlaceholderCards()
           )} */}
         </Fade>
-
-
-
-        {/* <div className="w-full image-wrapper popularImage">
-              <img
-                    src={`https://ik.imagekit.io/ofb/starter/store/20180522154/assets/items/largeimages/${code}.jpg`}
-                    alt={desc}
-                  />
-                  
-              </div>
-              
-              <p className="popularDesc">{storeProps.Brand}</p>
-              <p className="font-semibold text-center popularTitle">{title}</p>
-
-              <span className="card__status">
-                    {currency_sign} {price.value.integer}.
-                    {price.value.decimal}
-                  </span> */}
       </div>
     </div>
   );

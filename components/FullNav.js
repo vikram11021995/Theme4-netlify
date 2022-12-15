@@ -253,7 +253,7 @@ const Nav = ({ menu: { childs } }) => {
                       href={`/${url}`}
                       onClick={() => handleCategoryChange()}
                     >
-                      <a className="hi">{child.description}</a>
+                      <a className="home-detail">{child.description}</a>
                     </Link>
                     
                     {child.childs.length > 0 ? (

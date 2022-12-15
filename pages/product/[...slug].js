@@ -407,11 +407,11 @@ const Product = ({
                     />
                   </div>
                 </div>
-                <OtherInfoTab
+                {/* <OtherInfoTab
                   longDesc={productDetailsData.longdesc}
                   properties={productDetailsData.properties}
                   hiddenProps={productDetailsData.hiddenProperties}
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -515,6 +515,9 @@ const Product = ({
                   />
                 </div>
               </div>
+
+
+              
 
               {/* <>
                 <OtherInfoTab

@@ -29,6 +29,7 @@ const Wrapper = styled.div`
   } 
   .image-wrapper{
     height:150px;
+    border: 1px solid rgb(221, 221, 221);
   }
 
   .content-wrapper {

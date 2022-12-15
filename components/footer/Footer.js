@@ -46,7 +46,7 @@ const Footer = () => {
           <Container style={{ marginBottom: "20px" }}>
             <div className="new-footer" style={{ maxWidth: "100%" }}>
               <div className="columns" style={{ maxWidth: "100%" }}>
-                <div className="footer_line">
+                {/* <div className="footer_line">
                   <div>
                     <div className="footerLogo pull-left">
                       <div style={{ width: "220px" }}>
@@ -58,11 +58,11 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="footer-container">
                 <div
-                  className="liHead"
+                  className="liHead liHeadFooter"
                   id="policy-menu"
                   onClick={e => handleOnClickFooterSection(e)}
                   data-target="terms"
@@ -402,11 +402,11 @@ const Wrapper = styled.footer`
   .footer--desktop{
     background-image: url(https://ik.imagekit.io/ofb/themes/Group_638_yXmI-6396.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669879053933) !important;
   }
-  @media only screen and (max-width: 1023px) {
-    .footer--desktop {
-      display: none;
-    }
-  }
+  // @media only screen and (max-width: 1023px) {
+  //   .footer--desktop {
+  //     display: none;
+  //   }
+  // }
 
   @media only screen and (min-width: 1024px) {
     .footer--mobile {

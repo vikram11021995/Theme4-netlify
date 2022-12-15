@@ -74,14 +74,12 @@ const HomeBanner = () => {
               />
               <div>
                 <p className="skinCareView">Skin Care</p>
-                <button className="btn-g">View Products</button>
+                <button className="btn-g">
+                <Link href={`/shop/categories/skin-care`}>
+                      <a className="collection-color">View Products</a>
+                    </Link>
+                </button>
               </div>
-
-              {/* <div className="overlay"></div>
-              <p className="skin-care1">Skin Care</p>
-              <div className="carebutton">
-                <a href="#"> View Products </a>
-              </div> */}
             </div>
 
             <div className="imgcollectionmargin">
@@ -91,13 +89,13 @@ const HomeBanner = () => {
                   className="shopCollections"
                 />
                 <div>
-                <p className="nailCareView">Nail Care</p>
-                <button className="btn-a">View Products</button>
+                  <p className="nailCareView">Nail Care</p>
+                  <button className="btn-a">
+                  <Link href={`/shop/categories/skin-care`}>
+                      <a className="collection-color">View Products</a>
+                    </Link>
+                  </button>
                 </div>
-                {/* <div className="overlay"></div>
-                <div className="carebutton1">
-                  <a href="#"> View Products </a>
-                </div> */}
               </div>
               <div className="shopcollectionTop particularitembrand2 container-b">
                 <img
@@ -105,13 +103,14 @@ const HomeBanner = () => {
                   className="shopCollections"
                 />
                 <div>
-                <p className="makeupCareView">Fragrances</p>
-                <button className="btn-b">View Products</button>
+                  <p className="makeupCareView">Fragrances</p>
+
+                  <button className="btn-b">
+                    <Link href={`/shop/categories/fragrance`}>
+                      <a className="collection-color">View Products</a>
+                    </Link>
+                  </button>
                 </div>
-                {/* <div className="overlay"></div>
-                <div className="carebutton2">
-                  <a href="#"> View Products </a>
-                </div> */}
               </div>
             </div>
 
@@ -121,18 +120,15 @@ const HomeBanner = () => {
                   src={`https://ik.imagekit.io/ofb/themes/Component_179___6_qAssxe4KZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1670299132107`}
                   // alt={desc}
                   className="shopCollections"
-                  
                 />
                 <div>
-                <p className="bathCareView1">Makeup & Cosmetics</p>
-                <button className="btn-c">View Products</button>
+                  <p className="bathCareView1">Makeup & Cosmetics</p>
+                  <button className="btn-c">
+                  <Link href={`/shop/categories/make-up`}>
+                      <a className="collection-color">View Products</a>
+                    </Link>
+                  </button>
                 </div>
-
-                {/* <div className="overlay"></div>
-                <p className="Cosmetics-makeups fragranc">Makeup & Cosmetics</p>
-                <div className="carebutton3">
-                  <a href="#"> View Products </a>
-                </div> */}
               </div>
               <div className="shopcollectionTop particularitembrand4 container-d">
                 <img
@@ -142,13 +138,12 @@ const HomeBanner = () => {
                 />
                 <div>
                   <p className="bath_careview">Bath & Body Soap</p>
-                <button className="btn-d">View Products</button>
+                  <button className="btn-d">
+                  <Link href={`/shop/categories/bath-body`}>
+                      <a className="collection-color">View Products</a>
+                    </Link>
+                  </button>
                 </div>
-                {/* <div className="overlay"></div>
-                <p className="Cosmetics-makeups fragrances">Bath & Body Soap</p>
-                <div className="carebutton4">
-                  <a href="#"> View Products </a>
-                </div> */}
               </div>
             </div>
 
@@ -161,13 +156,13 @@ const HomeBanner = () => {
                 />
                 <div>
                   <p className="hair_careview">Hair Care</p>
-                <button className="btn-e">View Products</button>
+                  <button className="btn-e">
+                  <Link href={`/shop/categories/hair-care`}>
+                      <a className="collection-color">View Products</a>
+                    </Link>
+                  </button>
                 </div>
-                {/* <div className="overlay"></div>
-                <p className="Cosmetics-makeups fragrances">Hair Care</p>
-                <div className="carebutton5">
-                  <a href="#"> View Products </a>
-                </div> */}
+
               </div>
               <div className="shopcollectionTop particularitembrand6 container-f">
                 <img
@@ -175,17 +170,12 @@ const HomeBanner = () => {
                   // alt={desc}
                   className="shopCollections"
                 />
-                {/* <button className="btn-f">View All</button> */}
                 <button className="btn-f">
-              <Link href={`/shop/categories`}>
-                <a className="collection-color">View All</a>
-              </Link>
-            </button>
+                  <Link href={`/shop/categories`}>
+                    <a className="collection-color">View All</a>
+                  </Link>
+                </button>
 
-                {/* <div className="overlay"></div>
-                <div className="carebutton6">
-                  <a href="#"> View All </a>
-                </div> */}
               </div>
             </div>
           </div>

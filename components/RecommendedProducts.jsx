@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import {Fade} from "react-awesome-reveal";
-import PopularOffersoftheDayCard from "../components/PopularOffersoftheDayCard";
+import PopularOffersoftheDayCard from "../components/PopularOffersoftheDayCardHome";
 // import PopularOffersoftheDayCard from "../"
 import Grid from "./AC-UI-Elements/Grid/Grid";
 

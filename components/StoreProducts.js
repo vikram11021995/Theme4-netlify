@@ -218,11 +218,11 @@ const Wrapper = styled.div`
   .catItems {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
     padding: 3px !important;
   }
   .item {
-    border-bottom: 1px solid rgb(221, 221, 221);
+    // border-bottom: 1px solid rgb(221, 221, 221);
     // padding-bottom: 20px;
   }
 

@@ -275,45 +275,7 @@ const OtherInfoTab = ({ longDesc, properties, hiddenProps, reviews, description 
 
       {/* <AboutItem description={longDesc} properties={properties} /> */}
 
-      {/* <div className="containers">
-    <div className="card tabs">
-        <input id="tab-1" type="radio" className="tab tab-selector" checked="checked" name="tab" />
-        <label htmlFor="tab-1" className="tab tab-primary">Product</label>
-        <input id="tab-2" type="radio" className="tab tab-selector" name="tab" />
-        <label htmlFor="tab-2" className="tab tab-success">Options</label>
-        <input id="tab-3" type="radio" className="tab tab-selector" name="tab" />
-        <label htmlFor="tab-3" className="tab tab-default">Shipping</label>
-        <input id="tab-4" type="radio" className="tab tab-selector" name="tab" />
-        <label htmlFor="tab-4" className="tab tab-warning">Published</label>
-        
-        <div className="tabsShadow"></div>
-        <div className="glider"></div>
-
-        <section className="content">
-          <div className="item" id="content-1">
-            <h2 className="tab-title tab-primary">Tab 1</h2>
-            <p>
-            1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
-          </div>
-           <div className="item" id="content-2">
-             <h2 className="tab-title tab-success">Tab 2</h2>
-             <p>
-            2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
-          </div>
-           <div className="item" id="content-3">
-             <h2 className="tab-title tab-default">Tab 3</h2>
-             <p>
-            3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis </p>
-          </div>
-            <div className="item" id="content-4">
-              <h2 className="tab-title tab-warning">Tab 4</h2>
-              <p>
-            4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </section> 
-        </div>
-    
-  </div> */}
+      
       <div className="tabsparent">
         <div className="item_tabs">
           <Tabs>
@@ -445,10 +407,10 @@ const OtherInfoTab = ({ longDesc, properties, hiddenProps, reviews, description 
               {/* </form> */}
             </Content>
             <Content active={active === 3} className="tab_content">
-              <h1>Content 4</h1>
+              <h1>No Content</h1>
             </Content>
             <Content active={active === 4} className="tab_content">
-              <h1>Content 5</h1>
+              <h1>No Comments</h1>
             </Content>
           </div>
         </>

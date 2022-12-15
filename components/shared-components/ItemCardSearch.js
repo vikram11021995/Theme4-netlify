@@ -404,16 +404,6 @@ const ItemCard = ({
           </Link>  
 
 
-
-          {/* <div className="shadow_swhow_mini">
-            <div className="deroul_soustitre">
-              <a href={`#${item.id}`}>
-                <span>Quick View</span>
-              </a>
-            </div>
-          </div>  */}
-
-          {/* <div> */}
           <div className="star-rating star-ratingsz star-rating1">
         <input type="radio" id="5-stars" name="rating" value="5" />
         <label htmlFor="5-stars" className="star1">
@@ -440,10 +430,8 @@ const ItemCard = ({
       <div className="addToCartProducts addToCartProductss">
         
         <div className="">
-          {/* <button className="button-addtocart category-btn">Add to Cart</button> */}
-          {/* <Link href={`/${item.url}`} prefetch={false} ><span>Add to Shopping Bag</span></Link> */}
           <Link href={`/${item.url}`} prefetch={false} >
-          <button className="button-addtocart button-addtocart1 category-btn">Add to Cart</button>
+          <button className="button-addtocart1 category-btn button-cartsearch">Add to Cart</button>
           </Link>
 
         </div>
@@ -1030,9 +1018,7 @@ opacity: 1;
     }
   }
 
-  // .button-addtocart{
-  //   padding: 6px 123px !important;
-  // }
+  
 
   .category-btn{
     padding: 6px 125px;
@@ -1043,6 +1029,10 @@ opacity: 1;
     padding: 6px 143px !important;
   }
 }
+
+.button-addtocart11{
+    padding: 7px 128px !important;
+  }
 
 `;
 

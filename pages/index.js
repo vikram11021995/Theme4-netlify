@@ -406,7 +406,7 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
 
       {/* <img
         src="https://ik.imagekit.io/ofb/themes/Image_1_ZzNfpuWRD.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665052320020" /> */}
-        <div className="browseCat-container" style={{ marginTop: "30px" }}>
+        <div className="browseCat-container">
         {/* <h3 className="browseCat">
           <Translate
             translationFileName={"translation"}

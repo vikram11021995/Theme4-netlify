@@ -17,6 +17,13 @@ const Wrapper = styled.div`
     background-size: cover;
   }
 
+  @media screen and (max-width: 430px) {
+    .sub-nav-wrapper {
+      background-size: contain;
+      height: 98px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .sub-nav-title-desc-wrapper p{
       width: 100% !important;
