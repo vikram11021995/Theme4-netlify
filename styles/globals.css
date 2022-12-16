@@ -6399,6 +6399,12 @@ th, td {
 }
 
 @media only screen and (max-width: 430px) {
+  .add_wishlbasket{
+    padding: 0 21%;
+  }
+  .removeWishlists11{
+    padding: 0 12%;
+  }
   .mobile-filter-button {
     font-size: 22px !important;
     width: 100% !important;

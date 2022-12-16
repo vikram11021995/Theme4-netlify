@@ -111,6 +111,7 @@ const WishListBar = ({ data, productUnavailable, price: pPrice, product }) => {
               onClick={e => {
                 handleToggleWishlistIcon(e);
               }}
+              className="removeWishlists11"
             >
               Remove from wishlist
             </span>
@@ -125,6 +126,7 @@ const WishListBar = ({ data, productUnavailable, price: pPrice, product }) => {
               onClick={e => {
                 handleToggleWishlistIcon(e);
               }}
+              className="add_wishlbasket"
             >
               Add to Wishlist
             </span>
