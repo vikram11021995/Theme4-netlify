@@ -171,7 +171,7 @@ export default function MiniCart({ close }) {
                           console.log("delete clicked");
                         }}
                       >
-                        <MdOutlineDeleteForever className="mb-2" />
+                        <MdOutlineDeleteForever className="mb-2" style={{color: "#ff0000"}}/>
                       </span>
                       {renderProductImage(itemcode, title)}
                       <p className={classes.itemDistName}>{distName}</p>

@@ -77,6 +77,7 @@ const Wrapper = styled.div`
       z-index: 9999;
       box-shadow: 0 0 10px #cdcdcd;
       left: 0px;
+      width: 100%;
     }
   }
 

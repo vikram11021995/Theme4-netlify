@@ -240,7 +240,7 @@ const Stores = ({ storesProps }) => {
               <div>
               <Fade direction="left" delay={1e3} cascade damping={0.2} triggerOnce>
                 <h2 className="sub-nav-menu-title">Brands</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                <p className="store1brand_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
                 </Fade>
               </div>
             </div>

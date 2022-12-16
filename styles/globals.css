@@ -6399,6 +6399,21 @@ th, td {
 }
 
 @media only screen and (max-width: 430px) {
+  .mobile-filter-button {
+    font-size: 22px !important;
+    width: 100% !important;
+    justify-content: center !important;
+}
+
+  .store1brand_detail{
+    display: none;
+  }
+  .onlymobileTab{
+    display: none;
+  }
+  .brand-authors{
+    display: none;
+  }
   .image-link {
     height: 260px !important;
   }

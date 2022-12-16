@@ -154,6 +154,17 @@ const Wrapper = styled.div`
     }
   }
 
+
+  @media only screen and (max-width: 430px){
+  .facets-wrapper{
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+    box-shadow: 0 0 10px #cdcdcd;
+    left: 0px;
+    }
+  }
+
   .facetBreadcrumb:hover {
     background: rgba(251, 192, 180, 0.2);
     border: 1px solid #dc7863 !important;
