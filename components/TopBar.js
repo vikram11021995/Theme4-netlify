@@ -563,10 +563,11 @@ const TopBar = ({ menu, locale }) => {
                   <div className="absolute w-5 h-5 text-xs flex justify-center items-center -top-1 -right-1 bg-red-600 text-white rounded-full">
                     {wishListState.length}
                   </div>
-                  <IoHeartOutline />
+                  <IoHeartSharp style={{color: "#FF7D7D"}}/>
                 </>
               ) : (
-                <IoHeartSharp />
+                
+                <IoHeartOutline />
               )}
             </a>
 

@@ -73,7 +73,7 @@ const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    background: url("https://ik.imagekit.io/ofb/themes/Mask_Group_5_qByvx6kru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665383991372") !important;
+    // background: url("https://ik.imagekit.io/ofb/themes/Mask_Group_5_qByvx6kru.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665383991372") !important;
 
     .sub-nav-title-desc-wrapper p{
       width: 100% !important;

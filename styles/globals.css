@@ -2726,14 +2726,12 @@ span.facetCrumb {
   }
 
   .homebanner-image-wrapper {
-    /* height: 467px;
-    background-image: url(https://ik.imagekit.io/ofb/themes/Mask_Group_3_OM67gMq5N.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665052323256);
-    background-position: center; */
     height: 173px;
-    background-image: url(https://ik.imagekit.io/ofb/themes/Mask_Group_3_OM67gMq5N.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665052323256);
+    background-image: url(https://ik.imagekit.io/ofb/themes/Group_397_rTm50tP7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669898590394);
     object-fit: contain;
     background-position: center;
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: cover;
   }
 }
 
@@ -4436,7 +4434,7 @@ transform: translateY(-50%);
 
 .readMorebtn:hover{
   background-color: #FF7D7D;
-  color: #fff;
+  color: #fff !important;
 }
 
 .shopCollectBtn {
@@ -4741,8 +4739,9 @@ transform: translateY(-50%);
 }
 
 .basket-icon-btn{
-  background: #FF7D7D !important;
-    /* padding: 4%; */
+  /* background: #FF7D7D !important; */
+  background: rgb(255, 125, 125);
+    color: #fff;
     padding: 5px 2px !important;
     margin-left: 0.5rem !important;
     border-radius: 3px;
@@ -6390,6 +6389,12 @@ th, td {
 }
 
 @media only screen and (max-width: 430px) {
+  .image-link {
+    height: 260px !important;
+  }
+  .exploreCollectionsBtn{
+    width: 145px !important;
+  }
   .discountedPrices1 {
     margin-left: -17% !important;
 }
@@ -6545,6 +6550,10 @@ button {
   color: #37455E;
   font-weight: 500;
   padding: 7px 128px;
+}
+
+.categoryReadBtn:hover{
+  color: #fff !important;
 }
 
 
