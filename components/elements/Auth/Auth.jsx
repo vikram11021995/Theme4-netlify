@@ -210,7 +210,7 @@ const Auth = ({ authModalState, setAuthModal }) => {
           )}
           <button
             type="submit"
-            className=" bg-red-600 text-white py-3 px-2 uppercase text-center flex justify-center items-center"
+            className=" bg-red-600 text-white py-3 px-2 uppercase text-center flex justify-center items-center loginAppBtn"
           >
             {isLoading ? (
               <span className="">

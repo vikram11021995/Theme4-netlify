@@ -104,7 +104,7 @@ const MobileNavMenu = ({ open, toggle, close, menu: { childs } }) => {
                     >
                       <a onClick={toggle}>
                         {/* <img src={`https://ik.imagekit.io/ofb/TLP/${child.description.toLowerCase().replace(/\s+/g, '-')}.png`} /> */}
-                        {child.description.replace('Shop By', 'Shop').replace(/&amp;/g,"&").replace('home1', 'home')} 
+                        {child.description.replace('Shop By', 'Shop').replace(/&amp;/g,"&").replace('Home1', 'Home')} 
                         {console.log("vikram", child.description)}
                       </a>
                     </Link>
