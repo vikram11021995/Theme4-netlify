@@ -168,7 +168,7 @@ const Facet = ({
           aria-expanded={isOpen ? "true" : "false"}
           tabIndex={"0"}
           onClick={() => setIsOpen(!isOpen)}
-          className="text-base md:text-md lg:text-2xl facets-title"
+          className={`desk-${facet?.title} text-base md:text-md lg:text-2xl facets-title`}
         >
           {facet?.title}
 

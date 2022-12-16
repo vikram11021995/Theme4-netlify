@@ -15,7 +15,17 @@ body {
 body.active-modal {
   overflow-y: hidden;
 }
-
+.rounded-full {
+  border-radius: 9999px;
+  width: 160px;
+}
+.px-3 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.desk-Reviews{
+  display: none !important;
+}
 .country-selector {
   display: none !important;
 }

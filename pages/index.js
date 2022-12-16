@@ -111,248 +111,6 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
     shallowEqual
   );
 
-  const ThemeMenu = ({
-                       setTheme,
-                       //setThemeFont,
-                       //setColorTheme,
-                       close
-                     }) => {
-
-
-    //const [colorTheme, setColorTheme] = useState('theme-blue');
-    //const [bannerTheme, setBannerTheme] = useState('one');
-    // const [colorSets, setcolorSets] = useState('first');
-    // const [featuredTheme, setFeaturedTheme] = useState('row6');
-
-    // const [menuRegular, setMenuRegular] = useState('regular');
-    // const [catRegular, setCatRegular] = useState('regular');
-
-    // console.log('menuRegular', menuRegular);
-
-    // useEffect(() => {
-    //   const currentColor = JSON.parse(localStorage.getItem("themes"));
-    //   if (currentColor) {
-    //     setColorTheme(currentColor);
-    //     document.documentElement.className = currentColor.color;
-    //   }
-
-    // }, [colorTheme]);
-
-    // const handleClickColorSets = (colors) => {
-    //   let consent = {
-    //     banner: colors,
-    //     isLoaded: true
-    //   };
-    //   localStorage.setItem('ColorSets', JSON.stringify(consent));
-    //   setBannerTheme(consent);
-    // }
-
-    // useEffect(() => {
-    //   const currentBanner = JSON.parse(localStorage.getItem("themesbanner"));
-    //   if (currentBanner) {
-    //     setBannerTheme(currentBanner);
-    //   }
-
-    // }, [bannerTheme]);
-
-    // useEffect(() => {
-    //   const currentFeatured = JSON.parse(localStorage.getItem("themesfeatured"));
-    //   if (currentFeatured) {
-    //     setFeaturedTheme(currentFeatured);
-    //   }
-
-    // }, [featuredTheme]);
-
-    // const handleClick = (theme) => {
-    //   let consent = {
-    //     color: theme,
-    //     IsAllPages: "Yes",
-    //     isLoaded: true
-    //   };
-    //   localStorage.setItem('themes', JSON.stringify(consent));
-    //   //setColorTheme(consent);
-    // }
-
-    // const handleClickMenuRegular = (regular) => {
-    //   let consent = {
-    //     menu: regular
-    //   };
-    //   localStorage.setItem('menu', JSON.stringify(consent));
-    //   //setMenuRegular(consent);
-    // }
-
-    // useEffect(() => {
-    //   const currentRegularMenu = JSON.parse(localStorage.getItem("menu"));
-    //   if (currentRegularMenu) {
-    //     setMenuRegular(currentRegularMenu);
-    //   }
-
-    // }, [menuRegular]);
-
-
-    // const handleClickCatRegular = (regular) => {
-    //   let consent = {
-    //     cat: regular
-    //   };
-    //   localStorage.setItem('Cat', JSON.stringify(consent));
-    //   //setMenuRegular(consent);
-    // }
-
-    // useEffect(() => {
-    //   const currentRegularCat = JSON.parse(localStorage.getItem("Cat"));
-    //   if (currentRegularCat) {
-    //     setCatRegular(currentRegularCat);
-    //   }
-
-    // }, [catRegular]);
-
-
-    // const handleClickrowfeatured = (featured) => {
-    //   let consent = {
-    //     featured: featured,
-    //     isLoaded: true
-    //   };
-    //   localStorage.setItem('themesfeatured', JSON.stringify(consent));
-    //   //setFeaturedTheme(consent);
-    // }
-
-
-    return (
-      <MenuStyled>
-        <div className="h-full bg-white">
-          <div
-            className="h-full flex flex-col w-full"
-            style={{ overflow: "auto", paddingBottom: "80px" }}
-          >
-
-            <div className="Sivaaaa"
-                 style={{ width: isMobileState ? "340px" : "1000px" }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  height: "100%",
-                  justifyContent: "space-between",
-                  backgroundColor: "white"
-                }}
-              >
-
-                <div>
-
-
-                  <div style={{ height: "700px", overFlow: "auto" }}
-
-                  >
-
-                    <div className="palette-card p-5">
-                      {/* <p className="maincss">Color Sets (Recommeded)</p>
-  
-                      <div className="palette-card_colors">
-                        <div className="singlebanner" id='theme-pink' onClick={() => handleClick('theme-pink')}>Set 1</div>
-                        <div className='singlebanner' id='theme-gray' onClick={() => handleClick('theme-gray')}>Set 2</div>
-                        <div className="singlebanner" id='theme-green' onClick={() => handleClick('theme-green')}>Set 3</div>
-                        <div className='doublebanner' id='theme-blue' onClick={() => handleClick('theme-blue')}>Set 4</div>
-                      </div>
-                      <p className="maincss">Custom Colors</p>
-                      <div className="palette-card_colors">
-                        <div style={{ background: "rgb(251, 86, 7)" }} id='theme-orange' onClick={() => handleClick('theme-orange')}><span>FB5607</span></div>
-                        <div style={{ background: "rgb(255, 190, 11)" }} id='theme-FFBE0B' onClick={() => handleClick('theme-FFBE0B')}><span>FFBE0B</span></div>
-                        <div style={{ background: "rgb(6, 214, 160)" }} id='theme-06D6A0' onClick={() => handleClick('theme-06D6A0')}><span>06D6A0</span></div>
-                        <div style={{ background: "rgb(17, 138, 178)" }} id='theme-118AB2' onClick={() => handleClick('theme-118AB2')}><span>118AB2</span></div>
-                        <div style={{ background: "rgb(7, 59, 76)" }} id='theme-073B4C' onClick={() => handleClick('theme-073B4C')}><span>073B4C</span></div>
-                      </div>
-                      <div className="palette-card_colors">
-                        <div style={{ background: "rgb(88, 81, 35)" }} id='theme-585123' onClick={() => handleClick('theme-585123')}><span>585123</span></div>
-                        <div style={{ background: "rgb(238, 193, 112)" }} id='theme-EEC170' onClick={() => handleClick('theme-EEC170')}><span>EEC170</span></div>
-                        <div style={{ background: "rgb(242, 166, 90)" }} id='theme-F2A65A' onClick={() => handleClick('theme-F2A65A')}><span>F2A65A</span></div>
-                        <div style={{ background: "rgb(245, 133, 73)" }} id='theme-F58549' onClick={() => handleClick('theme-F58549')}><span>F58549</span></div>
-                        <div style={{ background: "rgb(119, 47, 26)" }} id='theme-772F1A' onClick={() => handleClick('theme-772F1A')}><span>772F1A</span></div>
-                      </div>
-                      <div className="palette-card_colors">
-                        <div style={{ background: "rgb(216, 140, 154)" }} id='theme-D88C9A' onClick={() => handleClick('theme-D88C9A')}><span>D88C9A</span></div>
-                        <div style={{ background: "rgb(242, 208, 169)" }} id='theme-F2D0A9' onClick={() => handleClick('theme-F2D0A9')}><span>F2D0A9</span></div>
-                        <div style={{ background: "#AB47BC" }} id='theme-AB47BC' onClick={() => handleClick('theme-AB47BC')}><span>AB47BC</span></div>
-                        <div style={{ background: "rgb(153, 193, 185)" }} id='theme-99C1B9' onClick={() => handleClick('theme-99C1B9')}><span>99C1B9</span></div>
-                        <div style={{ background: "rgb(142, 125, 190)" }} id='theme-8E7DBE' onClick={() => handleClick('theme-8E7DBE')}><span>8E7DBE</span></div>
-                      </div> */}
-                      <App
-                        allThemes={allThemes}
-                        selectedTheme={selectedTheme}
-                        setSelectedTheme={setSelectedTheme}
-                        theme={theme}
-                        themeLoaded={themeLoaded}
-                      />
-
-                      {/* <p className="maincss">Header Styles</p>
-  
-                        <div className="palette-card_colors">
-                        <div className="singlebanner" onClick={() => handleClickMenuRegular('regular')}>Header 1</div>
-                        <div className='doublebanner' onClick={() => handleClickMenuRegular('nonregular')}>Header 2</div>
-                        </div>
-  
-                        <p className="maincss">Category Styles</p>
-  
-                        <div className="palette-card_colors">
-                        <div className="singlebanner" onClick={() => handleClickCatRegular('regular')}>Category 1</div>
-                        <div className='doublebanner' onClick={() => handleClickCatRegular('nonregular')}>Category 2</div>
-                        </div> */}
-                      {/* <p className="maincss">Banner Wizards</p>
-  
-            <div className="palette-card_colors">
-             <div className="singlebanner" onClick={() => handleClickBanners('one')}>Single Banner</div>
-             <div className='doublebanner' onClick={() => handleClickBanners('two')}>Double Banner</div>
-            </div>
-  
-            <p className="maincss">Featured Cards</p>
-  
-            <div className="palette-card_colors">
-             <div className="singlebanner" onClick={() => handleClickrowfeatured('row6')}>Row 6 Ptoducts</div>
-             <div className='doublebanner' onClick={() => handleClickrowfeatured('row10')}>Row 10 Ptoducts</div>
-            </div> */}
-
-                    </div>
-
-
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </MenuStyled>
-    );
-
-  };
-
-
-  // const fetchQueryData = async (query, sortBy) => {
-  //   let storeCid = menuData.childs.find(cat => cat.URL.includes("stores")).cid;
-  //
-  //   const storesData = await fetch(
-  //     categoryUrl({
-  //       id: storeCid,
-  //       query:
-  //         query.length > 0
-  //           ? query
-  //               .map(q => "&" + q.name.toLowerCase() + "=" + q.value)
-  //               .join("")
-  //           : "",
-  //       sortBy
-  //     })
-  //   );
-  //   let data = await storesData.json();
-  //
-  //   setStores(data);
-  // };
-  //
-  // useEffect(() => {
-  //   if (query.length > 0 || sortBy !== "") {
-  //     fetchQueryData(query, sortBy);
-  //   }
-  // }, [query, sortBy]);
   console.log("c", selectedTheme);
   console.log("cf", createTheme);
   console.log("cff", allThemes);
@@ -384,13 +142,13 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
         renderedBy="Header"
       />
       {/* <App /> */}
-      <HomeBanner allThemes={allThemes} create={createTheme} selectedTheme={selectedTheme} />
+      <HomeBanner />
       <DynamicExternalContentFromCMS
         place="home"
         position="Middle"
         renderedBy="Header"
       />
-      <CategoriesListTheme1 allThemes={allThemes} create={createTheme} selectedTheme={selectedTheme} />
+      <CategoriesListTheme1 />
       <PopularOffersoftheDay shopby={shopbyData} />
 
       <EndOfSeason />
@@ -401,18 +159,8 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
 
       <RecommendedProducts shopby={shopbyData}/>
       <ListOfBest />
-      {/* <Policies /> */}
-      
-
-      {/* <img
-        src="https://ik.imagekit.io/ofb/themes/Image_1_ZzNfpuWRD.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665052320020" /> */}
-        <div className="browseCat-container">
-        {/* <h3 className="browseCat">
-          <Translate
-            translationFileName={"translation"}
-            translateKey={"home.browseByCategories"}
-          />
-        </h3> */}
+     <div className="browseCat-container">
+        
         <Collections />
         
         <FeaturedSellers stores={stores} />
@@ -437,44 +185,11 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
 
         </div>
 
-        {/* <PopularOffersoftheDay shopby={shopbyData} /> */}
-
-
-      {/* <div className="browseCat-container" style={{ marginTop: "30px" }}>
-        <h3 className="browseCat">
-          <Translate
-            translationFileName={"translation"}
-            translateKey={"home.browseByCategories"}
-          />
-        </h3>
-        <Collections />
-        
-        <FeaturedSellers stores={stores} />
        
-      </div> */}
 
       
 
-      <div
-        className="themeSetting"
-        onClick={() => setShowThemes(!showThemes)}
-      >
-        <svg className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-11o4os1" focusable="false" aria-hidden="true"
-             viewBox="0 0 24 24" data-testid="CogIcon">
-          <path
-            d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"></path>
-        </svg>
-      </div>
-
-      <DynamicDrawer open={showThemes} onClose={() => setShowThemes(false)}>
-        <ThemeMenu
-          close={() => setShowThemes(false)}
-          //setTheme={setTheme}
-          //SetMenuRegular={SetMenuRegular}
-          //setColorTheme={setColorTheme}
-          //setThemeFont={setThemeFont}
-        />
-      </DynamicDrawer>
+     
 
       <DynamicExternalContentFromCMS
         place="home"

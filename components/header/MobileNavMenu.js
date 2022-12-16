@@ -98,7 +98,7 @@ const MobileNavMenu = ({ open, toggle, close, menu: { childs } }) => {
                   >
                     <div className="navmenumain">
                     <Link
-                      href={`/${url}`}
+                      href={`/${url.replace("shop/home1", "/")}`}
                       onClick={() => handleCategoryChange()}
                       locale={langState}
                     >

@@ -521,31 +521,18 @@ const TopBar = ({ menu, locale }) => {
           <div className="logo">
             <Link href="/">
               <a>
-                {/* SHOP LOGO */}
                 <img src="https://ik.imagekit.io/ofb/themes/Component_86___2_IqkuM36Zr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669619861686"/>
               </a>
             </Link>
           </div>
-          {/* <b style={{fontWeight: "bold", color: "#f00"}}> {menuRegular.menu === "regular" ? "Siva" : "Ram" } </b> */}
-          {/* {menuRegular.menu === "regular" ? <Nav menu={menu} /> : null } */}
+          
            <Nav menu={menu} />
           
           <div className="search">
             <Search />
           </div>
           <div className="flex icons">
-            {/* <div
-       id="lang-currency-div"
-       style={{
-        display: "flex",
-        alignItems: "center",
-        position: "relative"
-       }}
-      >
-       <Internationalization locale={locale} />
-      </div> */}
-
-      {/* {menuRegular.menu} */}
+          
 
       
       <a

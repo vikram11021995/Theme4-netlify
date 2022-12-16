@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const Wrapper = styled.div`
   font-size: 14px;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
   border-radius: 4px;
   background: #fff;
   overflow: hidden;
