@@ -148,6 +148,12 @@ const Wrapper = styled.div`
     left: 0px;
   }
 
+  @media only screen and (min-width: 431px) {
+    .facets-wrapper{
+      display: none;
+    }
+  }
+
   .facetBreadcrumb:hover {
     background: rgba(251, 192, 180, 0.2);
     border: 1px solid #dc7863 !important;
