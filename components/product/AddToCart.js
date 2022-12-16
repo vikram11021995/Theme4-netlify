@@ -28,7 +28,8 @@ const AddToCart = ({
   priceInv,
   storeInfo,
   numberOfItems,
-  productDetailsData
+  productDetailsData,
+  setNumberOfItems
 }) => {
   const dispatch = useDispatch();
 
@@ -366,6 +367,11 @@ const AddToCart = ({
               <div className="qtyControlsBtns">
                 <div
                   className="qtyControlsMinus no-select"
+                  onClick={() => {
+                    if (numberOfItems - 1 > 0) {
+                      setNumberOfItems(numberOfItems - 1);
+                    }
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <span>-</span>
