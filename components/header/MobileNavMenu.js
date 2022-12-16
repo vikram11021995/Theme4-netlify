@@ -104,7 +104,8 @@ const MobileNavMenu = ({ open, toggle, close, menu: { childs } }) => {
                     >
                       <a onClick={toggle}>
                         {/* <img src={`https://ik.imagekit.io/ofb/TLP/${child.description.toLowerCase().replace(/\s+/g, '-')}.png`} /> */}
-                        {child.description.replace('Shop By', 'Shop').replace(/&amp;/g,"&")} 
+                        {child.description.replace('Shop By', 'Shop').replace(/&amp;/g,"&").replace('home1', 'home')} 
+                        {console.log("vikram", child.description)}
                       </a>
                     </Link>
                     {child.childs.length > 0 ? ( <div onClick={dropdownMobile}><IoChevronForwardOutline /></div> ) : null }
@@ -114,6 +115,7 @@ const MobileNavMenu = ({ open, toggle, close, menu: { childs } }) => {
                       <div className="subcatdata">
                       <ul>
                         {child?.childs?.map(subcat => {
+                          console.log("eee", subcat)
                           return (
                           <li className="hvr-col" key={subcat.cid} onClick={toggle}>
                             <Link
@@ -121,6 +123,7 @@ const MobileNavMenu = ({ open, toggle, close, menu: { childs } }) => {
                               onClick={() => handleCategoryChange()}
                             >
                               <a>{subcat.description}</a>
+                              {/* <a>{console.log("ddd", subcat.description)}</a> */}
                             </Link>
                             <ul className="megamenu-child">
                               {subcat.childs.map((subsubcat, index) => (

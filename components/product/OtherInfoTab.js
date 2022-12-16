@@ -15,8 +15,11 @@ import {
   MdStarOutline
 } from "react-icons/md";
 import { Tabs, Tab, Content } from "./tab";
+// import { Tabs, Tab, Content } from "./MobileTab";
+
 import { MdOutlineNavigateNext } from "react-icons/md";
 // import {ReviewBar} from "../../components/product/ReviewBar";
+import MobileTab from "./itemTabMobile";
 import ReviewBar from "./ReviewBar"
 
 const Wrapper = styled.div`
@@ -357,28 +360,6 @@ const OtherInfoTab = ({ longDesc, properties, hiddenProps, reviews, description 
           </>
         )} */}
 
-              {/* <table>
-                <tr>
-                  <th>Manufacturer Name:</th>
-                  <td>Bill Gates</td>
-                </tr>
-                <tr>
-                  <th>Suitable for Skin Type</th>
-                  <td>555 77 854</td>
-                </tr>
-                <tr>
-                  <th>Usage Instructions</th>
-                  <td>555 77 855</td>
-                </tr>
-                <tr>
-                  <th>Aftercare Tips</th>
-                  <td>555 77 855</td>
-                </tr>
-                <tr>
-                  <th>When to Use</th>
-                  <td>555 77 855</td>
-                </tr>
-              </table> */}
             </Content>
             <Content active={active === 2} className="tab_content">
               {/* <ReviewBar/> */}
@@ -415,6 +396,13 @@ const OtherInfoTab = ({ longDesc, properties, hiddenProps, reviews, description 
           </div>
         </>
       </div>
+
+      <div className="onlymobileTab">
+      <MobileTab/>
+      </div>
+
+
+      
     </Wrapper>
   );
 };

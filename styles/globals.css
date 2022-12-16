@@ -5787,6 +5787,9 @@ opacity: 1;
   color: #37455E;
   font-weight: 500;
   padding: 7px 125px;
+  /* padding: 7px 114px; */
+    display: block;
+    width: 100%;
 }
 
 .item:hover{
@@ -5990,7 +5993,7 @@ ul.colors li:nth-child(3) {
   color: rgb(55, 69, 94) !important;
 }
 .price-padding{
-  padding-left: 9%;
+  padding-left: 10%;
 }
 
 
@@ -6334,6 +6337,9 @@ th, td {
 
 
 @media only screen and (min-width: 431px) {
+  .onlymobileTab{
+    display: none;
+  }
   .imagesitemcollection11 {
     max-width: 32.2%;
   }
@@ -6384,6 +6390,13 @@ th, td {
 }
 
 @media only screen and (max-width: 430px) {
+  .discountedPrices1 {
+    margin-left: -17% !important;
+}
+  .price-padding {
+    padding-left: 16% !important;
+}
+
   .liHeadFooter{
     display: none;
   }

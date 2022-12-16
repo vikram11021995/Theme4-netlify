@@ -369,6 +369,20 @@ const Product = ({
                   hiddenProps={productDetailsData.hiddenProperties}
                   video={productVideo.records}
                 />
+
+                <div className="supplier_infos">
+                  <div className="" style={{ marginBottom: "5px", fontWeight: "500" }}>
+                    {supplierInfo?.[0]?.distributorOrder?.[0]?.name}
+                  </div>
+                  <div className="shareIicons">
+                    <img
+                      src="https://ik.imagekit.io/ofb/themes/share_t9_6MEKiE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1666846030396"
+                      width="4%"
+                      className="shareitemicons"
+                    />
+                  </div>
+                </div>
+
                 <div className={isMobileState ? "mt-5 mb-5" : "mt-10"}>
                   <p className="md:text-sm">
                     <span style={{ fontWeight: "700", marginRight: "5px" }}>
@@ -515,9 +529,6 @@ const Product = ({
                   />
                 </div>
               </div>
-
-
-              
 
               {/* <>
                 <OtherInfoTab

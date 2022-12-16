@@ -250,7 +250,8 @@ const Nav = ({ menu: { childs } }) => {
                     <Link
                       className={`menuCat category-menu `}
                       style={{ color: "#fff" }}
-                      href={`/${url}`}
+                      // href={`/${url}`}
+                      href={`/`}
                       onClick={() => handleCategoryChange()}
                     >
                       <a className="home-detail">{child.description.replace("Home1", "Home")}</a>

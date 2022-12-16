@@ -99,9 +99,15 @@ const Wrapper = styled.div`
     font-weight: 500;
   }
 
-  .popularoffer-btn{
-    padding: 7px 128px !important;
-  }
+  // .popularoffer-btn{
+  //   padding: 7px 128px !important;
+  // }
+  .popularoffer-btn {
+    padding: 7px 123px !important; 
+    // width: max-content;
+    display: block;
+    width: 100%;
+}
 
 @media only screen and (max-width: 430px) {
   .popularoffer-btn{
