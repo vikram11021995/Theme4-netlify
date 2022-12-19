@@ -97,7 +97,7 @@ const Wrapper = styled.div`
   background-color: #e21a23;
   color: #fff;
   top: -10px;
-  right: -3px;
+  right: -9px;
   width: 20px;
   font-size: 12px;
   height: 20px;
@@ -373,7 +373,8 @@ const WishList = ({ showWishList, setWishlist, onClose }) => {
                   <MdDelete
                     style={{
                       height: "30px",
-                      width: "30px"
+                      width: "30px",
+                      color: "rgb(255, 0, 0)"
                     }}
                   />
                 </div>
@@ -550,7 +551,8 @@ const TopBar = ({ menu, locale }) => {
                   <div className="absolute w-5 h-5 text-xs flex justify-center items-center -top-1 -right-1 bg-red-600 text-white rounded-full">
                     {wishListState.length}
                   </div>
-                  <IoHeartSharp style={{color: "#FF7D7D"}}/>
+                  {/* <IoHeartSharp style={{color: "#FF7D7D"}}/> */}
+                  <img src={`https://ik.imagekit.io/ofb/themes/heart__1___1__w2s0eEm63.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1666676255701`}/>
                 </>
               ) : (
                 

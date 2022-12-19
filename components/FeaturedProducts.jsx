@@ -49,7 +49,7 @@ function PopularOffersoftheDay({ shopby }) {
 
   };
 
-  const handleClick1 = e => {
+  const handleClickTwo = e => {
     setIconTwoColor("4px solid #F27665");
     
     const index = parseInt(e.target.id, 0);
@@ -59,7 +59,7 @@ function PopularOffersoftheDay({ shopby }) {
 
   };
 
-  const handleClick2 = e => {
+  const handleClickThree = e => {
     setIconThreeColor("4px solid #F27665");
     const index = parseInt(e.target.id, 0);
     if (index !== active) {
@@ -68,7 +68,7 @@ function PopularOffersoftheDay({ shopby }) {
 
   };
 
-  const handleClick3 = e => {
+  const handleClickFour = e => {
     setIconFourColor("4px solid #F27665");
 
     const index = parseInt(e.target.id, 0);
@@ -78,7 +78,7 @@ function PopularOffersoftheDay({ shopby }) {
 
   };
 
-  const handleClick4 = e => {
+  const handleClickFive = e => {
     setIconFiveColor("4px solid #F27665");
 
     const index = parseInt(e.target.id, 0);
@@ -234,16 +234,16 @@ function PopularOffersoftheDay({ shopby }) {
         Skincare
         </Tab>
 
-        <Tab onClick={handleClick1} active={active === 1} id={1} style={{ borderBottom: iconTwoColor }}>
+        <Tab onClick={handleClickTwo} active={active === 1} id={1} style={{ borderBottom: iconTwoColor }}>
         Makeup
         </Tab>
-        <Tab onClick={handleClick2} active={active === 2} id={2} style={{ borderBottom: iconThreeColor }}>
+        <Tab onClick={handleClickThree} active={active === 2} id={2} style={{ borderBottom: iconThreeColor }}>
         Hair Care
         </Tab>
-        <Tab onClick={handleClick3} active={active === 3} id={3} style={{ borderBottom: iconFourColor }}>
+        <Tab onClick={handleClickFour} active={active === 3} id={3} style={{ borderBottom: iconFourColor }}>
         Bath & Body
         </Tab>
-        <Tab onClick={handleClick4} active={active === 4} id={4} style={{ borderBottom: iconFiveColor }}>
+        <Tab onClick={handleClickFive} active={active === 4} id={4} style={{ borderBottom: iconFiveColor }}>
         Fragrance
         </Tab>
       </Tabs>
