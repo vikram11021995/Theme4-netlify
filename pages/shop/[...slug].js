@@ -213,6 +213,7 @@ export const setFacetsAPI = (setFacets, facets) => {
   console.log("tempFacets", facets);
 
   if (facets) {
+    console.log("zebra", facets);
     const tempFacets = [];
 
     facets.forEach(facet => {

@@ -24,7 +24,7 @@ import ShopByTypeNew from "../components/theme1/ShopByType/ShopByTypeNew";
 import ShopByCollection from "../components/theme1/ShopByCollection/ShopByCollection";
 import ListOfBest from "../components/theme1/ListOfBest/ListOfBest";
 import Policies from "../components/theme1/Policies/Policies";
-
+import Image from 'next/image'
 
 const DynamicExternalContentFromCMS = dynamic(() =>
   import("../components/AC-ExternalContentFromCMS/ExternalContentFromCMS")
@@ -173,14 +173,34 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
           <div>
             <img src="https://ik.imagekit.io/ofb/themes/Group_570_8tCC5Kv9z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669881834938"
             className="brand-authors1"/>
+            {/* <Image
+        src="https://ik.imagekit.io/ofb/themes/Group_570_8tCC5Kv9z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669881834938"
+        alt="Picture of the author"
+        width={200}
+        height={100}
+      /> */}
           </div>
           <div>
             <img src="https://ik.imagekit.io/ofb/themes/Group_571_W0fPMGAt_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669881834909"
             className="brand-authors1"/>
+            {/* <Image
+                src="https://ik.imagekit.io/ofb/themes/Group_570_8tCC5Kv9z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669881834938"
+
+        alt="Picture of the author"
+        width={90}
+        height={60}
+      /> */}
           </div>
           <div>
             <img src="https://ik.imagekit.io/ofb/themes/Group_569_vxtK0B6Sg.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669881834772"
             className="brand-authors1"/>
+            {/* <Image
+                src="https://ik.imagekit.io/ofb/themes/Group_570_8tCC5Kv9z.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669881834938"
+
+        alt="Picture of the author"
+        width={90}
+        height={60}
+      /> */}
           </div>
 
         </div>

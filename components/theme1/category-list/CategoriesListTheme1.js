@@ -3,6 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import classes from "./CategoriesListTheme1.module.css";
 import { Fade } from "react-awesome-reveal";
+// import Image from 'next/image'
 
 const HomeBanner = props => {
   return (
@@ -225,6 +226,10 @@ const HomeBanner = props => {
           </div>
         </div>
       </div> */}
+
+
+
+
 
 
       <div className="overflow-x-auto flex justify-center">

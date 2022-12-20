@@ -65,6 +65,9 @@ const HomeBanner = () => {
           </div>
           </JackInTheBox> */}
 
+
+
+
           <div className="shopByCollections">
             <div className="imagesitemcollections imagesitemcollection11 container-g">
               <img

@@ -171,6 +171,7 @@ export default function CategoryItems({
           }
         >
           {categoryItems.map(item => {
+            console.log("categoryItems", categoryItems)
             return <ItemCard key={item.id} item={item} setAuthModal={setAuthModal} authModal={authModal} />;
           })}
           {loadMoreScrollPage === false && (

@@ -105,6 +105,7 @@ const Facets = () => {
                   </Link>
                   <span style={{ float: "right", color: "#999" }}>
                     {cat.childs.length}
+                    {console.log("nnn", cat.childs)}
                   </span>
                 </div>
               );

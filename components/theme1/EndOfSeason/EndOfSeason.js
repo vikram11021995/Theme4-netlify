@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import classes from "./EndOfSeason.module.css";
-import {Fade} from "react-awesome-reveal";
-
+import { Fade } from "react-awesome-reveal";
 
 const HomeBanner = () => {
   return (
@@ -32,42 +31,53 @@ const HomeBanner = () => {
       </div> */}
       <div className="skinCareTip11">
         <h3 className="skinCareTip">Skin and Hair Care Tips</h3>
-        <p className="skinCareDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p className="skinCareDescription">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </p>
       </div>
 
-    <div className="healthCareMain">
-      <div className="healthCareTips">
-        <div className="skinimgtips">
-        <img
-                    src={`https://ik.imagekit.io/ofb/themes/Group_398_SHNf_6O7i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669856474318`}
-                    // alt={desc}
-                    className="skinCareImage"
-                  />
-        </div>
+      <div className="healthCareMain">
+        <div className="healthCareTips">
+          <div className="skinimgtips">
+            <img
+              src={`https://ik.imagekit.io/ofb/themes/Group_398_SHNf_6O7i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669856474318`}
+              className="skinCareImage"
+            />
+            {/* <Image
+        src={`https://ik.imagekit.io/ofb/themes/Group_398_SHNf_6O7i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669856474318`}
+        alt="Picture of the author"
+        layout="fill"
+        /> */}
+          </div>
 
-        <div className="health-descrip">
-          <p className="healthTipsdetaildolor">Lorem ipsum dolor</p>
-          <p className="healthTipsdetailsx">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <div className="health-descrip">
+            <p className="healthTipsdetaildolor">Lorem ipsum dolor</p>
+            <p className="healthTipsdetailsx">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
 
-          <button className="readMorebtn readMorebtn1">
-          <Link href={`/shop/categories`}>
+            <button className="readMorebtn readMorebtn1">
+              <Link href={`/shop/categories`}>
                 <a className="categoryReadBtn">Read More</a>
               </Link>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-{/* <div> */}
+      {/* <div> */}
 
-
-
-
-
-{/* <div>
+      {/* <div>
 <article className="article group">
   <img className="imageLeft right" src={`https://ik.imagekit.io/ofb/themes/Group_398_SHNf_6O7i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669856474318`} alt="Image"/>
   <section className="content">
@@ -82,18 +92,10 @@ const HomeBanner = () => {
   </article>
   </div> */}
 
+      {/* </div> */}
+      {/* </div> */}
 
-
-  
-{/* </div> */}
-{/* </div> */}
-
-
-
-
-
-
-          {/* <div className="customersProfit">
+      {/* <div className="customersProfit">
               <div>
               <img
                     src={`https://ik.imagekit.io/ofb/themes/Group_398_SHNf_6O7i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669856474318`}
@@ -111,9 +113,6 @@ const HomeBanner = () => {
           <button className="readMorebtn readMorebtn1">Read More</button>
               </div>
             </div> */}
-
-
-
     </>
   );
 };
