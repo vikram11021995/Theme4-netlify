@@ -291,11 +291,11 @@ const Wrapper = styled.section`
 
   @media only screen and (max-width: 768px) {
     .itemFamily {
-      font-size: 21px !important;
+      font-size: 17px !important;
     }
 
     .infinite-scroll-component {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
 
       .item {
         width: 100%;
@@ -309,7 +309,7 @@ const Wrapper = styled.section`
 
   @media only screen and (max-width: 375px) {
     .infinite-scroll-component {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;

@@ -1590,6 +1590,19 @@ form#searchForm label {
     width: 100% !important;
     margin-right: 0rem !important;
 }
+
+.popularmain:hover .addToCartProducts {
+  display: inline-block;
+  display: none !important;
+  justify-content: center;
+}
+.item:hover .addToCartProducts {
+  display: none !important;
+  /* margin-top: -57px; */
+  justify-content: center;
+}
+
+
 .w-16 {
   width: auto;
 }
@@ -6406,9 +6419,18 @@ th, td {
     padding: 0 12%;
   }
   .mobile-filter-button {
-    font-size: 22px !important;
+    font-size: 19px !important;
     width: 100% !important;
-    justify-content: center !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.mobile-filter-button span{
+  display: flex;
+}
+select.form-control {
+  width: 100%;
+  font-weight: 800 !important;
 }
 
   .store1brand_detail{
@@ -6421,7 +6443,7 @@ th, td {
     display: none;
   }
   .image-link {
-    height: 260px !important;
+    height: 180px !important;
   }
   .exploreCollectionsBtn{
     width: 145px !important;

@@ -149,7 +149,8 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
         renderedBy="Header"
       />
       <CategoriesListTheme1 />
-      <PopularOffersoftheDay shopby={shopbyData} />
+      <br/><br/>
+      {/* <PopularOffersoftheDay shopby={shopbyData} /> */}
 
       <EndOfSeason />
       {catRegular.cat === "regular" ? <ShopByType /> : <ShopByTypeNew />}
@@ -157,7 +158,7 @@ export default function Home({ carousel, menu, shopbyData, allThemes }) {
 
       <ShopByCollection />
 
-      <RecommendedProducts shopby={shopbyData}/>
+      {/* <RecommendedProducts shopby={shopbyData}/> */}
       <ListOfBest />
      <div className="browseCat-container">
         

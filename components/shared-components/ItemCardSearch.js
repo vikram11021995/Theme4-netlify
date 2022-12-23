@@ -1006,7 +1006,7 @@ opacity: 1;
 
   @media only screen and (max-width: 768px) {
     .itemFamily {
-      font-size: 21px !important;
+      font-size: 17px !important;
     }
 
     .infinite-scroll-component {

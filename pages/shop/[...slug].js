@@ -511,10 +511,14 @@ const Category = ({
       <>
         <button
           className="mobile-filter-button mobile-filter-buttons"
-          onClick={() => setMobileFacetsOpen(true)}
+          
         >
-          Filter
-          <MdFilterList />
+         <span onClick={() => setMobileFacetsOpen(true)}>Filter
+          <MdFilterList /></span> 
+          <SortBy
+                productCount={categoryState.numberOfItems}
+                setSortBy={setSortBy}
+              />
         </button>
         {isMobileState && (
           <Drawer

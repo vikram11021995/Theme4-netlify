@@ -570,7 +570,7 @@ const Wrapper = styled.section`
 
   @media only screen and (max-width: 375px) {
     .infinite-scroll-component {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;

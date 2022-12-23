@@ -1018,7 +1018,13 @@ opacity: 1;
 
   @media only screen and (max-width: 768px) {
     .itemFamily {
-      font-size: 21px !important;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 140px;
+      font-size: 17px !important;
+      height: auto !important;
+      text-align:left !important;
     }
 
     .infinite-scroll-component {
